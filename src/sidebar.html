@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<base target="_top">
+
+	<!-- Use this CSS stylesheet to ensure that add-ons styling 
+     matches the default Google Docs styles -->
+     <link href="https://ssl.gstatic.com/docs/script/css/add-ons.css" rel="stylesheet"> 
+    </head>
+    <body>
+	<div class='container'>
+	    <canvas id="barcode"
+		    jsbarcode-format="CODE128"
+		    jsbarcode-value="98071000037695"
+		    jsbarcode-textmargin="0"
+		    jsbarcode-fontoptions="bold">
+	    </canvas>
+	    <form name=barcodeSettings action="" method="get">
+	    Barcode Prefix <input type="text" name="barcodePrefix" value="9807">
+	    Barcode Sku <input type="text" name="barcodeSku"
+					   value="1000-037-695">
+	    <input type="button" name="barcodeGeneratorStart" value="Generate
+	    Barcode">
+	    </form>
+	</div>
+	<!-- Import js barcode library and jquery -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/barcodes/JsBarcode.code128.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<?!= include('javascript'); ?>
+    </body>
+</html>
+
+
