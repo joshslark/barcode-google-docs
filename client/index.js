@@ -16,6 +16,13 @@ function updateBarcodePreview() {
 	sku.replace("-","");
 	JsBarcode("#barcode", prefix+sku);
 	insertBarcode();
+	$('input[name="barcodeSku"]').val("");
 }
 
 document.querySelector('input[name="barcodeGeneratorStart"]').addEventListener("click", updateBarcodePreview);
+document.addEventListener('keypress', 
+	function (e) {
+		if (13 == e.keyCode) {
+			updateBarcodePreview()
+		}
+	});
