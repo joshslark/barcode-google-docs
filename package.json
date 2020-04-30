@@ -33,7 +33,7 @@
   "dependencies": {
     "apps-script-oauth2": "git+https://github.com/googlesamples/apps-script-oauth2.git",
     "eslint": "^5.16.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jsbarcode": "^3.11.0",
     "wrapper-webpack-plugin": "^0.1.11"
   }
